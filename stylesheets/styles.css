@@ -35,7 +35,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr 9fr;
-    gap: 1rem;
+    gap: 2rem;
     font-size: 1.5rem;
     padding: 0.5rem;
 }
@@ -43,10 +43,6 @@ body {
 .sidebar a {
     color: inherit;
     text-decoration: inherit;
-}
-
-.sidebar > * {
-    border: 1px solid black;
 }
 
 .logo {
@@ -62,12 +58,8 @@ body {
 
 .sidebar > nav {
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 16rem auto;
     gap: 1rem;
-}
-
-.sidebar > nav > * {
-    border: 1px solid red;
 }
 
 .sidebar li > a {
@@ -76,8 +68,8 @@ body {
     align-items: center;
 }
 
-.sidebar .icon {
-    width: 30px;
+.icon-nav {
+    max-width: 30px;
     justify-self: center;
 }
 
@@ -92,10 +84,72 @@ header {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 2fr 3fr;
+    padding: 1rem 2rem;
+    gap: 1rem;
 }
 
-header > * {
-    border: 1px solid black;
+.search-bar {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    align-items: center;
+}
+
+.icon-head {
+    height: 20px;
+}
+
+.input-search {
+    height: 1.5rem;
+    background-color: var(--gray);
+    border-style: none;
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 20px 40px auto;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.icon-bell {
+    height: 20px;
+}
+
+.prof-avatar {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.head-greeting {
+    display: grid;
+    grid-template-columns: 5rem auto;
+    font-weight: bold;
+    align-items: center;
+}
+
+.greet-avatar {
+    border-radius: 50%;
+    height: 90%;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.actions button {
+    height: 2rem;
+    width: 6rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border-style: none;
+    border-radius: 1rem;
 }
 
 /*---------------------*/
@@ -110,10 +164,6 @@ main {
     grid-template-columns: 3fr 1fr;
     gap: 24px;
     padding: 24px;
-}
-
-main > * {
-    border: 1px solid black;
 }
 
 main > section {
@@ -131,6 +181,32 @@ main > aside {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 24px;
+}
+
+/*-------------------*/
+/* Measurement Grids */
+/*                   */
+/* Remove When Done  */
+/*-------------------*/
+
+.sidebar > * {
+    border: 1px solid black;
+}
+
+.sidebar > nav > * {
+    border: 1px solid red;
+}
+
+.head-greeting > * {
+    border: 1px solid blue;
+}
+
+header > * {
+    border: 1px solid black;
+}
+
+main > * {
+    border: 1px solid black;
 }
 
 main > aside > * {
