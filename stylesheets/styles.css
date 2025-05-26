@@ -1,3 +1,7 @@
+/*-----------------*/
+/* Global Settings */
+/*-----------------*/
+
 :root {
     --blue: #1992d4;
     --white: #ffffff;
@@ -17,6 +21,10 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+/*----------------*/
+/* Sidebar Styles */
+/*----------------*/
 
 .sidebar {
     grid-column: 1/2;
@@ -49,6 +57,10 @@ body {
     border: 1px solid red;
 }
 
+/*---------------*/
+/* Header Styles */
+/*---------------*/
+
 header {
     background-color: var(--white);
     grid-column: 2/3;
@@ -61,6 +73,10 @@ header {
 header > * {
     border: 1px solid black;
 }
+
+/*---------------------*/
+/* Content Area Styles */
+/*---------------------*/
 
 main {
     background-color: var(--gray);
