@@ -214,8 +214,9 @@ main > section {
 }
 
 main > aside {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: 24px;
 }
 
@@ -226,8 +227,47 @@ main > aside {
 
 .side-block .block {
     background-color: var(--white);
+    padding: 16px;
     border-radius: 8px;
     box-shadow: 3px 5px 5px #bbb;
+}
+
+.side-block .block p {
+    color: var(--text-gray);
+}
+
+.side-block .announcement p {
+    font-size: 0.7rem;
+}
+
+.side-block .block hr {
+    margin: 8px 0;
+}
+
+.side-block .feed-social {
+    display: grid;
+    grid-template-rows: repeat(4, 3rem);
+    gap: 1.5rem;
+}
+
+.side-block .social {
+    display: grid;
+    grid-template-columns: 3rem auto;
+    gap: 8px;
+    align-items: center;
+}
+
+.side-block .social img {
+    border-radius: 50%;
+}
+
+.side-block .social p {
+    font-size: 0.9rem;
+}
+
+.handle {
+    color: black;
+    font-weight: bold;
 }
 
 /*-------------------*/
